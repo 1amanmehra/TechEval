@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPointOne"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".MainActivity"
+        tools:listitem="@layout/item_list" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/colorBlack" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpagerPointTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/margin_default">
+
+            <RadioGroup
+                android:id="@+id/radioGroupPointTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="@dimen/radio_button_size"
+                    android:layout_height="@dimen/radio_button_size"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:clickable="false" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="@dimen/radio_button_size"
+                    android:layout_height="@dimen/radio_button_size"
+                    android:layout_marginLeft="10dp"
+
+                    android:button="@android:color/transparent"
+                    android:clickable="false" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="@dimen/radio_button_size"
+                    android:layout_height="@dimen/radio_button_size"
+                    android:layout_marginLeft="10dp"
+
+                    android:button="@android:color/transparent"
+                    android:clickable="false" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="@dimen/radio_button_size"
+                    android:layout_height="@dimen/radio_button_size"
+                    android:layout_marginLeft="10dp"
+
+                    android:button="@android:color/transparent"
+                    android:clickable="false" />
+            </RadioGroup>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/colorBlack" />
+
+    <RelativeLayout
+        android:id="@+id/layoutPointThree"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="@dimen/padding_default">
+
+        <TextView
+            style="@style/Text.Header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/text_top_left" />
+
+        <TextView
+            style="@style/Text.Header"
+            android:layout_centerInParent="true"
+            android:text="@string/text_centre" />
+
+        <TextView
+            style="@style/Text.Header"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/text_bottom_right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvPointFour"
+            style="@style/Text.Header"
+            android:text="@string/point_four_message"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/layoutPointFive"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default">
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_default_height"
+            android:layout_weight="1"
+            android:text="@string/button_red"
+            android:textColor="@color/colorRed" />
+
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_default_height"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_weight="1"
+            android:text="@string/button_blue"
+            android:textColor="@color/colorBlue" />
+
+        <Button
+            android:id="@+id/btnGreen"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_default_height"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_weight="1"
+            android:text="@string/button_green"
+            android:textColor="@color/colorGreen" />
+    </LinearLayout>
+
+</LinearLayout>

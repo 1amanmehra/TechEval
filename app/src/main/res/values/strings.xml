@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Tech Eval</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_scenario_one">Scenario One</string>
+    <string name="nav_scenario_two">Scenario Two</string>
+
+    <string name="format_point_one_item">Item %d</string>
+    <string name="format_point_two_page">Page #%d</string>
+    <string name="format_page_pressed">Page #%d pressed.</string>
+
+    <string name="text_top_left">Text top left</string>
+    <string name="text_centre">Text centre</string>
+    <string name="text_bottom_right">Text bottom right</string>
+
+    <string name="point_four_message">Please choose item from top of screen.</string>
+    <string name="point_four_message_landscape">Please choose item from left top of screen.</string>
+    <string name="button_red">RED</string>
+    <string name="button_blue">BLUE</string>
+    <string name="button_green">GREEN</string>
+
+    <string name="navigation_launch_error">Couldn\'t start the navigation</string>
+    <string name="mode_of_transport">Mode of Transport:</string>
+    <string name="format_car_mins">Car- %s</string>
+    <string name="format_train_mins">Train- %s</string>
+    <string name="button_navigate">NAVIGATE</string>
+    <string name="loading_info">Loading information..</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCkhxRAhADAexqzzDuBm9aqlAIYpOAn3K0</string>
+
+</resources>
